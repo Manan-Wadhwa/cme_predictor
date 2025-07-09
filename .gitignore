@@ -9,7 +9,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# AutoGluon and ML model files (comment out if you want to track models)
+# AutoGluon and ML modelPS C:\Users\manan\Desktop\code> git reset --hard HEAD~1
 autogluon_models/
 best_lstm_model.h5
 catboost_info/

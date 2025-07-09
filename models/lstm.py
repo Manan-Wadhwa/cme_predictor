@@ -126,7 +126,7 @@ def build_lstm_model(optimizer='adam', dropout=0.3):
     ])
     model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
     return model
-
+    
 model = build_lstm_model()
 
 callbacks = [

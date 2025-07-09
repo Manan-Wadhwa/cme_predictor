@@ -1,8 +1,8 @@
 #%% Tabular Boosting Models with and without SMOTE
 from sklearn.metrics import classification_report
 from utils.preprocessing import load_and_preprocess
-# from lightgbm import LGBMClassifier
-# from xgboost import XGBClassifier
+from lightgbm import LGBMClassifier
+from xgboost import XGBClassifier
 from catboost import CatBoostClassifier
 from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import SMOTE
@@ -38,8 +38,8 @@ def run_boosting_models_smote(csv_path):
     X_train_cme, X_test_cme, y_train_cme, y_test_cme = train_test_split(X_cme, y_cme, test_size=0.2, random_state=42, stratify=y_cme)
     print("\n--- CME Classification (No SMOTE) ---")
     for clf, name in [
-        # (LGBMClassifier, "LightGBM"),
-        # (XGBClassifier, "XGBoost"),
+        (LGBMClassifier, "LightGBM"),
+        (XGBClassifier, "XGBoost"),
         (lambda: CatBoostClassifier(verbose=0), "CatBoost")
     ]:
         report = run_model(clf, f"{name} - CME", X_train_cme, y_train_cme, X_test_cme, y_test_cme)
