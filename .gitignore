@@ -1,0 +1,42 @@
+# Python virtual environments
+venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AutoGluon and ML model files (comment out if you want to track models)
+autogluon_models/
+best_lstm_model.h5
+catboost_info/
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Results, outputs, and logs
+outputs/
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Data files (optional)
+data/
+datasets/
+*.csv
+*.parquet
+*.json
