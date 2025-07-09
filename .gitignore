@@ -12,7 +12,6 @@ __pycache__/
 # AutoGluon and ML modelPS C:\Users\manan\Desktop\code> git reset --hard HEAD~1
 autogluon_models/
 best_lstm_model.h5
-catboost_info/
 
 # Jupyter and notebook checkpoints
 .ipynb_checkpoints/
@@ -39,4 +38,3 @@ data/
 datasets/
 *.csv
 *.parquet
-*.json
