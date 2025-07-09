@@ -292,7 +292,7 @@ class HALOEnsemblePredictor:
         
         print(f"✅ HALO results saved to {filename}")
 
-def run_halo_ensemble_pipeline(csv_path="merged_data.csv"):
+def run_halo_ensemble_pipeline(csv_path="data/merged_data.csv"):
     """Complete fast HALO ensemble pipeline"""
     print("🚀 STARTING FAST HALO ENSEMBLE PIPELINE")
     print("="*60)
@@ -331,4 +331,4 @@ def run_halo_ensemble_pipeline(csv_path="merged_data.csv"):
 if __name__ == "__main__":
     # Run the HALO pipeline
     print("🎯 Running HALO-specific Ensemble Pipeline")
-    halo_results = run_halo_ensemble_pipeline("merged_data.csv")
+    halo_results = run_halo_ensemble_pipeline("data/merged_data.csv")
